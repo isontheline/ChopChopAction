@@ -1,5 +1,8 @@
 name: "GoChopChop"
 description: "ChopChop is a tool for dynamic application security testing on web applications"
+branding:
+  icon: "target"
+  color: "gray-dark"
 inputs:
   host:
     description: 'The host to scan. Example : "https://example.net"'
@@ -11,7 +14,7 @@ inputs:
   httpRequestTimeout:
     description: 'The maximum time to wait for a HTTP response. Example : "10"'
     required: false
-    default: '10'
+    default: "10"
   signatures:
     description: 'The path to the signatures file. Example : ".chopchop/rules.yml"'
     required: false
