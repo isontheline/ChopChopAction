@@ -14,6 +14,9 @@ This action will scan your web application for vulnerabilities using [ChopChop](
 ### `httpRequestTimeout`
 **Optional** The maximum time to wait for a HTTP response. Default : `10`.
 
+### `signatures`
+**Optional** The path to the signatures file. Default : `/tmp/chopchop.yml`.
+
 ## Example usage
 ```
 uses: actions/chopchop@v1

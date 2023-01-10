@@ -1,0 +1,10 @@
+---
+insecure: false
+plugins:
+  - endpoint: "/composer.lock"
+    checks:
+      - name: "Obvious URI /composer.lock"
+        remediation: "Delete this obvious URI"
+        description: "Checking if obvious URI exists"
+        severity: "Medium"
+        status_code: 200

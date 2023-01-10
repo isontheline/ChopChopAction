@@ -12,6 +12,10 @@ inputs:
     description: 'The maximum time to wait for a HTTP response. Example : "10"'
     required: false
     default: '10'
+  signatures:
+    description: 'The path to the signatures file. Example : ".chopchop/rules.yml"'
+    required: false
+    default: "/tmp/chopchop.yml"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -19,7 +23,7 @@ runs:
     - "scan"
     - ${{ inputs.host }}
     - "--signatures"
-    - "/tmp/chopchop.yml"
+    - ${{ inputs.signatures }}
     - "--max-severity"
     - ${{ inputs.maxSeverity }}
     - "--timeout"
