@@ -1,0 +1,12 @@
+name: "ChopChop"
+description: "ChopChop is a tool for dynamic application security testing on web applications"
+inputs:
+  host:
+    description: 'The host to scan. Example, "https://foobar.com"'
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - "scan"
+    - ${{ inputs.host }}
