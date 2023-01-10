@@ -1,4 +1,4 @@
-name: "ChopChop"
+name: "GoChopChop"
 description: "ChopChop is a tool for dynamic application security testing on web applications"
 inputs:
   host:
