@@ -23,6 +23,7 @@ on:
 jobs:
   chopchop-action-job:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
     name: A job to test the ChopChop action
     steps:
       - name: Checkout
