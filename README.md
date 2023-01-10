@@ -1,5 +1,5 @@
 # ChopChopAction
-ChopChopAction an GitHub action for dynamic application security testing on web applications
+ChopChopAction is an GitHub action for dynamic application security testing on web applications
 
 This action will scan your web application for vulnerabilities using [ChopChop](https://github.com/isontheline/ChopChop).
 
