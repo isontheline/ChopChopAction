@@ -1,0 +1,19 @@
+name: ChopChop Action
+on:
+  workflow_dispatch:
+    inputs:
+      host:
+        description: "Host to scan"
+        required: true
+
+jobs:
+  chopchop-action-job:
+    runs-on: ubuntu-latest
+    name: A job to test the ChopChop action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Hello world action step
+        uses: ./
+        with:
+          host: "https://foobar.com"
