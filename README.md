@@ -19,7 +19,7 @@ This action will scan your web application for vulnerabilities using [ChopChop](
 
 ## Example usage
 ```
-uses: actions/chopchop@v1
+uses: isontheline/ChopChopAction@v1
 with:
   host: 'https://example.net'
 ```
