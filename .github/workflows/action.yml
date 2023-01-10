@@ -6,6 +6,19 @@ on:
         description: "Host to scan"
         required: true
         default: "https://example.net"
+      maxSeverity:
+        description: "Maximum severity to be allowed"
+        required: false
+        default: "Low"
+        type: choice
+        options: 
+        - Low
+        - Medium
+        - High
+      httpRequestTimeout:
+        description: "Maximum time to wait for a HTTP response"
+        required: false
+        default: "10"
 
 jobs:
   chopchop-action-job:

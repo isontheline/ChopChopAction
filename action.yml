@@ -2,8 +2,16 @@ name: "ChopChop"
 description: "ChopChop is a tool for dynamic application security testing on web applications"
 inputs:
   host:
-    description: 'The host to scan. Example, "https://example.net"'
+    description: 'The host to scan. Example : "https://example.net"'
     required: true
+  maxSeverity:
+    description: 'The maximum severity to be allowed. Examples : "Low" / "Medium" / "High"'
+    required: false
+    default: "Low"
+  httpRequestTimeout:
+    description: 'The maximum time to wait for a HTTP response. Example : "10"'
+    required: false
+    default: '10'
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -12,3 +20,7 @@ runs:
     - ${{ inputs.host }}
     - "--signatures"
     - "/tmp/chopchop.yml"
+    - "--max-severity"
+    - ${{ inputs.maxSeverity }}
+    - "--timeout"
+    - ${{ inputs.httpRequestTimeout }}
