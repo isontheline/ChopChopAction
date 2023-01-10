@@ -5,6 +5,7 @@ on:
       host:
         description: "Host to scan"
         required: true
+        default: "https://example.net"
 
 jobs:
   chopchop-action-job:
@@ -13,7 +14,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
+      - name: ChopChop Scan
         uses: ./
         with:
-          host: "https://foobar.com"
+          host: "https://example.net"

@@ -6,11 +6,11 @@ This action will scan your web application for vulnerabilities using [ChopChop](
 ## Inputs
 
 ### `host`
-**Required** The host to scan. Example : `https://foobar.com`.
+**Required** The host to scan. Example : `https://example.net`.
 
 ## Example usage
 ```
 uses: actions/chopchop@v1
 with:
-  host: 'https://foobar.com'
+  host: 'https://example.net'
 ```
