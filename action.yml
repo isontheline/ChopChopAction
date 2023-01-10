@@ -10,4 +10,5 @@ runs:
   args:
     - "scan"
     - ${{ inputs.host }}
-    - "--signature /tmp/chopchop.yml"
+    - "--signature"
+    - "/tmp/chopchop.yml"
