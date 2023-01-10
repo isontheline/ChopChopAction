@@ -30,4 +30,4 @@ jobs:
       - name: ChopChop Scan
         uses: ./
         with:
-          host: "https://example.net"
+          host: ${{ github.event.inputs.host }}
