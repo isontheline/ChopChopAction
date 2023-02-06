@@ -19,6 +19,10 @@ on:
         description: "Maximum time to wait for a HTTP response"
         required: false
         default: "10"
+      userAgent:
+        description: "User agent to use for HTTP requests"
+        required: false
+        default: "ChopChop"
 
 jobs:
   chopchop-action-job:
