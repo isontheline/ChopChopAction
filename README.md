@@ -17,6 +17,9 @@ This action will scan your web application for vulnerabilities using [ChopChop](
 ### `signatures`
 **Optional** The path to the signatures file. Default : `/tmp/chopchop.yml`.
 
+### `userAgent`
+**Optional** The user agent to use while making HTTP requests. Default : `ChopChop`.
+
 ## Example usage
 ```
 uses: isontheline/ChopChopAction@v1
